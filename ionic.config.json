@@ -1,0 +1,7 @@
+{
+  "name": "unidad1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
