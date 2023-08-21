@@ -1,13 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>pagina1</ion-title>
+<ion-header>
+  <ion-toolbar color="dark" >
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text="Atrás"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Página Iconos</ion-title>
+    <ion-icon slot="end" name="person" size="large" class="ion-padding"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">pagina1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <ion-text color="primary">
+    <h1>Iconos en Ionic</h1>
+  </ion-text>
+  <ion-text color="dark">
+    <p>Todos los iconos de ionic estan en <span class="chokita">https://ionic.io/ionicons/v4</span></p>
+  </ion-text>
+  <ion-text color="dark">
+    <p>Iconos comunes: </p>
+  </ion-text>
+  <ion-list>
+    <ion-item color="light">
+      <ion-label slot="start">logo-github</ion-label> <ion-icon slot="end" name="logo-github" size="large"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item color="medium">
+      <ion-label slot="start">barcode</ion-label> <ion-icon slot="end" name="barcode" size="large"></ion-icon>
+    </ion-item>
+  </ion-list>
 </ion-content>
