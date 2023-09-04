@@ -15,10 +15,16 @@
   <ion-text color="dark">
     <p>Esta es la página inicial de la aplicación para aprender a usar <span class="chokita">IONIC</span> </p>
   </ion-text>
-  <ion-text color="tertiary" routerLink="/pagina1">
+ <!--  <ion-text color="tertiary" routerLink="/pagina1">
     <h4>Página 1</h4>
-  </ion-text> 
-  <ion-text color="tertiary" routerLink="/pagina2">
-    <h4>Página 2</h4>
-  </ion-text> 
+  </ion-text>  -->
+  <ion-button (click)="onClick('pagina1')" expand="full" color="primary">
+    Página Iconos
+  </ion-button>
+  <ion-button (click)="onClick('pagina2')" expand="full" color="secondary">
+    Página Botones
+  </ion-button>
+  <ion-button (click)="onClick('alertas')" expand="full" color="tertiary">
+    Página Alertas
+  </ion-button>
 </ion-content>
