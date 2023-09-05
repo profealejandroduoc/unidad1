@@ -1,0 +1,21 @@
+
+<app-encabezado titulo="Formularios Ionic"></app-encabezado>
+<ion-content class="ion-padding">
+
+  <h3>Iniciar Sesión</h3>
+  <form #miFormulario="ngForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-input labelPlacement="floating" label="E-mail" required type="email" aria-label="Email" name="email" [(ngModel)]="usuario.username" ></ion-input>
+    </ion-item>
+    <ion-item>
+     
+      <ion-input labelPlacement="floating" label="Password" required type="password" aria-label="password" name="password" [(ngModel)]="usuario.password" ></ion-input>
+    </ion-item>
+   <!--  <ion-button block color="primary" type="submit" [disabled]="loginForm.invalid">
+      Login
+    </ion-button> -->
+    <ion-button expand="full" color="primary" type="submit" class="ion-padding" [disabled]="miFormulario.invalid">
+      Login
+    </ion-button>
+  </form>
+</ion-content>
