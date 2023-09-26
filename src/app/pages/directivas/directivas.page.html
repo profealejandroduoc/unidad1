@@ -1,0 +1,39 @@
+<app-encabezado titulo="Directivas"></app-encabezado>
+
+<ion-content class="ion-padding">
+  <h1>Ng IF</h1>
+  <p *ngIf="numero==10">Vale 10</p>
+  <p *ngIf="otronumero==10">No se muestra</p>
+
+  <h1>Ng FOR</h1>
+  <ion-list *ngFor="let item of personas" >
+    <ion-item>
+      <ion-card>
+        <ion-img src="assets/cheems.jpeg" ></ion-img>
+        <ion-card-header>
+          <ion-card-title>{{item.nombre}}</ion-card-title>
+          <ion-card-subtitle>{{item.apellido}}</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+         {{item.edad}}
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+
+
+  <ion-list *ngFor="let nombre of nombres">
+    <ion-item>
+      <ion-label>Elemento {{nombre}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list *ngFor="let persona of personas">
+    <ion-item>
+      <ion-label>{{persona.nombre}} {{persona.apellido}} </ion-label>
+      <p> Edad: {{persona.edad}}</p>
+    </ion-item>
+  </ion-list>
+  <ion-img src="assets/cheems.jpeg"></ion-img>
+</ion-content>
